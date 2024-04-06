@@ -1,0 +1,119 @@
+.kdam-thmor pro-regular {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.backArea{
+    height: 100vh;
+    width: 100%;
+    background-color:salmon;
+}
+.topArea{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+}
+.workingArea{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+#nav{
+    pointer-events: all;
+    width:100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav img{
+height: 50px;
+}
+#left,#right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family:"k";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+#hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 30%;
+}
+.heroRight{
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.heroRight p{
+    text-align: right;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1vw;
+}
+.heroRight .img_div{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1673757119677-6445b73a405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHx8MA%3D%3D);
+    background-size:contain;
+    background-position: center;
+    border-radius: 10px;
+}
+.heroLeft{
+    min-width: 50%;
+}
+
+.elem{
+    height: 6vw;
+    overflow: hidden;
+    position: relative;
+}
+.elem :nth-child(2),.elem :nth-child(3),.elem :nth-child(4),.elem :nth-child(5)
+{
+    opacity: 0;
+} 
+.elem h1{
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase; 
+    font-size: 4vw;
+}
+
+.heroLeft button{
+    pointer-events: all;
+    color:crimson;
+    padding: 0.5vw 2vw;
+    font-size: 2vw;
+    margin-top:1vw;
+}
+.backArea img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
